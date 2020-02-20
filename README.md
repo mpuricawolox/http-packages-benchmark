@@ -387,3 +387,18 @@ for i in {1..10}; do t -- 'localhost:8080/apisauce' >> ./benchmark_results/apisa
 </tbody></table>
 
 <img src="./assets/throughput.png">
+
+
+----------
+## Resumen
+
+|                 |                       |                          |                    |                         |                         |                        |                             |
+|-----------------|-----------------------|--------------------------|--------------------|-------------------------|-------------------------|------------------------|-----------------------------|
+|                 | Performance (req/sec) | Cantidad de dependencias | Soporte para Hooks | Soporte para typescript | Popularidad (Downloads) | Api basada en promesas | Tamaño del package (Zipped) |
+| got             | 328.77                | 15                       | ✅                  | ✅                       | 34M/month               | ✅                      | 18.4KB                      |
+| request-promise | 266.63                | 7                        | ❌                  | ✅                       | 2M/month                | ✅                      | 246.4KB                     |
+| node-fetch      | 333.62                | 0                        | ❌                  | ✅                       | 11M/month               | ✅                      | 282B                        |
+| axios           | 245.76                | 3                        | ✅                  | ✅                       | 6M/month                | ✅                      | 4.3KB                       |
+| bent            | 356.26                | 3                        | ❌                  | ✅                       | 5K/month                | ✅                      | 805B                        |
+| apisauce        | 253.05                | 2                        | ❌                  | ✅                       | 54K/month               | ✅                      | 9.5KB                       |
+
